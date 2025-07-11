@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bun & Bite - Burger Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      background: #b91c1c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #1e1e1e, #111);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #1c1c1c;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 10px #facc15;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 15px 0 5px;
+    }
+    .card p {
+      color: #ccc;
+    }
+    .card button {
+      background: #facc15;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 30px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍔 Bun & Bite</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Delicious Burgers Delivered Fast!</h2>
+    <p>Fresh, juicy, and made with love. Place your order today.</p>
+  </section>
+
+  <section class="products" id="menu">
+    <div class="card">
+      <img src="https://source.unsplash.com/280x180/?burger,cheese" alt="Classic Beef Burger">
+      <h3>Classic Beef Burger</h3>
+      <p>₹129 - Juicy beef patty with lettuce & cheese</p>
+      <button onclick="window.location='#order'">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/280x180/?chicken,burger" alt="Spicy Chicken Burger">
+      <h3>Spicy Chicken Burger</h3>
+      <p>₹139 - Crispy chicken with spicy mayo</p>
+      <button onclick="window.location='#order'">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/280x180/?veggie,burger" alt="Veggie Delight">
+      <h3>Veggie Delight</h3>
+      <p>₹119 - Fresh vegetables with tangy sauce</p>
+      <button onclick="window.location='#order'">Order Now</button>
+    </div>
+  </section>
+
+  <section class="hero" id="order">
+    <h2>Place Your Order</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelJz5-PBuM5YjdEZterCKx8LVe2iRs6zC5d5xaYB4MdEihQA/viewform?embedded=true" width="90%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
+
+  <section class="hero" id="contact">
+    <h2>📍 Find Us</h2>
+    <iframe width="90%" height="300" style="border:0; border-radius:10px;" src="https://www.google.com/maps?q=D-185+Nandgram+Ghaziabad+near+jkg+school&output=embed" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Bun & Bite | Designed with ❤️ for burger lovers
+  </footer>
+
+</body>
+</html>
